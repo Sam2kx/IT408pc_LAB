@@ -1,0 +1,33 @@
+abstract class Animal{
+
+	abstract void sound();
+}
+
+ abstract class Lion extends Animal{
+ 
+	abstract void behave ();
+		
+}
+
+
+class Tiger extends Animal{
+		
+		public void sound(){
+		System.out.println("Tiger Scares");
+	
+	}
+		//@override
+		public void behave(){
+			System.out.println("Tiger Screws");
+	}
+}
+class Main{
+	public static void main(String[] args){
+		//Lion L=new Lion();
+		Tiger T=new Tiger();
+
+		T.sound();
+		T.behave();
+
+	}
+}
